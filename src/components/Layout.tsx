@@ -28,11 +28,8 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               <li className={isActive('/docs')}>
                 <Link to="/docs">Docs</Link>
               </li>
-              <li className={isActive('/infra')}>
-                <Link to="/infra">Infra</Link>
-              </li>
-              <li className={isActive('/support')}>
-                <Link to="/support">Support</Link>
+              <li className={isActive('/get-started')}>
+                <Link to="/get-started">Get Started</Link>
               </li>
               <li className={isActive('/about')}>
                 <Link to="/about">About</Link>

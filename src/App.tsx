@@ -5,8 +5,7 @@ import Layout from './components/Layout'
 // Import page components
 import Home from './pages/Home'
 import Docs from './pages/Docs'
-import Infra from './pages/Infra'
-import Support from './pages/Support'
+import GetStarted from './pages/GetStarted'
 import About from './pages/About'
 import Contact from './pages/Contact'
 
@@ -17,8 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/docs" element={<Docs />} />
-          <Route path="/infra" element={<Infra />} />
-          <Route path="/support" element={<Support />} />
+          <Route path="/get-started" element={<GetStarted />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

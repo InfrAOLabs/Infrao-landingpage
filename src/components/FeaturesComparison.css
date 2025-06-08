@@ -1,0 +1,129 @@
+.comparison-chart {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-header {
+  display: flex;
+  background-color: #f8f9fa;
+  font-weight: 600;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.comparison-row {
+  display: flex;
+  border-bottom: 1px solid #e9ecef;
+  transition: background-color 0.2s;
+}
+
+.comparison-row:hover {
+  background-color: #f8f9fa;
+}
+
+.comparison-row.category-header {
+  background-color: #f1f3f5;
+  font-weight: 600;
+}
+
+.feature-col, .tier-col {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.feature-col {
+  width: 40%;
+  font-weight: 500;
+}
+
+.tier-col {
+  width: 20%;
+  justify-content: center;
+  text-align: center;
+  border-left: 1px solid #e9ecef;
+}
+
+.tier-col.highlight {
+  background-color: #e7f5ff;
+  position: relative;
+}
+
+/* Style for the MOST POPULAR badge in the comparison header */
+.comparison-header .tier-col.highlight {
+  position: relative;
+  overflow: visible;
+}
+
+.comparison-header .tier-col.highlight::before {
+  content: 'MOST POPULAR';
+  position: absolute;
+  top: 0px;
+  right: -35px;
+  background: #4f46e5;
+  color: white;
+  padding: 0.15rem 1rem;
+  transform: rotate(45deg);
+  transform-origin: center;
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-align: center;
+  width: 60px;
+  z-index: 1;
+  line-height: 1.2;
+}
+
+/* Add some padding to the comparison header to accommodate the badge */
+.comparison-header {
+  position: relative;
+  padding-top: 2rem;
+  overflow: visible;
+}
+
+.subfeature {
+  padding-left: 2rem !important;
+  color: #495057;
+}
+
+.actions {
+  padding: 1.5rem 0;
+  background-color: #f8f9fa;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #f1f3f5;
+  color: #212529;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.btn.primary {
+  background-color: #339af0;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .comparison-chart {
+    font-size: 0.9rem;
+  }
+  
+  .feature-col, .tier-col {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  .subfeature {
+    padding-left: 1.5rem !important;
+  }
+}
