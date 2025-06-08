@@ -1,43 +1,29 @@
-import reactLogo from '/react.svg'
-import viteLogo from '/vite.svg'
-import arioLogo from '/ario_black.png'
-import arcaoLogo from '/arcao.png'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
-import { Counter } from './components/Counter'
-import { LogoLink } from './components/LogoLink'
+import Layout from './components/Layout'
+
+// Import page components
+import Home from './pages/Home'
+import Docs from './pages/Docs'
+import Infra from './pages/Infra'
+import Support from './pages/Support'
+import About from './pages/About'
+import Contact from './pages/Contact'
 
 function App() {
   return (
-    <>
-      <div>
-        <LogoLink
-          href="https://vitejs.dev"
-          src={viteLogo}
-          alt="Vite logo"
-        />
-        <LogoLink
-          href="https://react.dev"
-          src={reactLogo}
-          alt="React logo"
-          className="logo react"
-        />
-        <LogoLink
-          href="https://ar.io"
-          src={arioLogo}
-          alt="AR.IO logo"
-        />
-        <LogoLink
-          href="https://discord.gg/arc-ao"
-          src={arcaoLogo}
-          alt="ArcAO logo"
-        />
-      </div>
-      <h1>Vite + React + AR.IO + ArcAO</h1>
-      <Counter />
-      <p className="read-the-docs">
-        Click on the Vite, React, AR.IO and ArcAO logos to learn more
-      </p>
-    </>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/docs" element={<Docs />} />
+          <Route path="/infra" element={<Infra />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Layout>
+    </Router>
   )
 }
 
