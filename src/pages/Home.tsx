@@ -1,7 +1,35 @@
 import React from 'react';
 import logoFilled from '/logo-filled.png';
+import Carousel from '../components/Carousel';
 
 const Home: React.FC = () => {
+  const features = [
+    {
+      title: "Seamless Integration",
+      description: "Connect and deploy with ease across our infrastructure ecosystem. Our advanced CU hydration process for new deployments is industry-leading, getting your services up and running faster than anywhere else."
+    },
+    {
+      title: "Zero Downtime",
+      description: "Experience unparalleled reliability with our redundant infrastructure. Our multi-region failover and automated recovery systems ensure your services stay online, always."
+    },
+    {
+      title: "Insane Performance",
+      description: "Leverage our cutting-edge infrastructure for blazing-fast speeds. Our optimized network and compute layers deliver exceptional performance for all your workloads."
+    },
+    {
+      title: "Enterprise Ready",
+      description: "Built for scale with reliability and security at the core. Our infrastructure is battle-tested and trusted by leading organizations worldwide."
+    },
+    {
+      title: "Developer First",
+      description: "Comprehensive tools and documentation to accelerate your workflow. Our intuitive APIs and robust SDKs make development a breeze."
+    },
+    {
+      title: "Completely Free",
+      description: "Thanks to substantial backing from major investors, we're able to offer our enterprise-grade infrastructure completely free for early users. Join us now to lock in this unprecedented offer."
+    }
+  ];
+
   return (
     <div className="home">
       <div className="hero">
@@ -10,29 +38,7 @@ const Home: React.FC = () => {
         <p>Empowering the next generation of infrastructure solutions</p>
       </div>
       
-      <div className="value-props" style={{ 
-        display: 'flex', 
-        justifyContent: 'center', 
-        alignItems: 'center',
-        flexDirection: 'column',
-        gap: '2rem',
-        maxWidth: '800px',
-        margin: '0 auto',
-        padding: '2rem 0'
-      }}>
-        <div className="value-prop" style={{ textAlign: 'center', width: '100%' }}>
-          <h2>Seamless Integration</h2>
-          <p>Connect and deploy with ease across our infrastructure ecosystem</p>
-        </div>
-        <div className="value-prop" style={{ textAlign: 'center', width: '100%' }}>
-          <h2>Enterprise Ready</h2>
-          <p>Built for scale with reliability and security at the core</p>
-        </div>
-        <div className="value-prop" style={{ textAlign: 'center', width: '100%' }}>
-          <h2>Developer First</h2>
-          <p>Comprehensive tools and documentation to accelerate your workflow</p>
-        </div>
-      </div>
+      <Carousel items={features} interval={4000} />
       
       <div className="cta-section">
         <h2>Ready to transform your infrastructure?</h2>
