@@ -92,6 +92,64 @@ const FeaturesComparison: React.FC = () => {
         <div className="tier-col highlight">All + Custom builds</div>
       </div>
       
+      {/* AR.IO Gateways Section */}
+      <div className="comparison-row category-header">
+        <div className="feature-col">AR.IO Gateways</div>
+        <div className="tier-col">✓</div>
+        <div className="tier-col">✓</div>
+        <div className="tier-col highlight">✓</div>
+      </div>
+      
+      <div className="comparison-row">
+        <div className="feature-col subfeature">Access</div>
+        <div className="tier-col">Public</div>
+        <div className="tier-col">Private</div>
+        <div className="tier-col highlight">Private</div>
+      </div>
+      
+      <div className="comparison-row">
+        <div className="feature-col subfeature">Speed</div>
+        <div className="tier-col">Public</div>
+        <div className="tier-col">Regional Datacenters</div>
+        <div className="tier-col highlight">Regional Datacenters</div>
+      </div>
+      
+      <div className="comparison-row">
+        <div className="feature-col subfeature">GraphQL</div>
+        <div className="tier-col">Public</div>
+        <div className="tier-col">Goldsky Level</div>
+        <div className="tier-col highlight">Goldsky Level</div>
+      </div>
+      
+      {/* AO Localnet Section */}
+      <div className="comparison-row category-header">
+        <div className="feature-col">AO Localnet</div>
+        <div className="tier-col">✓</div>
+        <div className="tier-col">✓</div>
+        <div className="tier-col highlight">✓</div>
+      </div>
+      
+      <div className="comparison-row">
+        <div className="feature-col subfeature">Access</div>
+        <div className="tier-col">Public</div>
+        <div className="tier-col">Private</div>
+        <div className="tier-col highlight">Private</div>
+      </div>
+      
+      <div className="comparison-row">
+        <div className="feature-col subfeature">Support</div>
+        <div className="tier-col">No</div>
+        <div className="tier-col">Yes</div>
+        <div className="tier-col highlight">Yes</div>
+      </div>
+      
+      <div className="comparison-row">
+        <div className="feature-col subfeature">Hosting</div>
+        <div className="tier-col">Self Hosted</div>
+        <div className="tier-col">Hybrid/Cloud</div>
+        <div className="tier-col highlight">Hybrid/Cloud</div>
+      </div>
+      
       <div className="comparison-row actions">
         <div className="feature-col"></div>
         <div className="tier-col"><a href="#" className="btn">Get Started</a></div>
