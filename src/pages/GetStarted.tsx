@@ -87,59 +87,6 @@ const GetStarted: React.FC = () => {
         
         <FeaturesComparison />
         
-        <div className="product-grid">
-          <div className="product-card">
-            <h3>CU (Computation Unit)</h3>
-            <p className="product-description">
-              Optimized for dry runs and computing messages with close-coupled communication
-            </p>
-            <ul className="product-features">
-              <li>Available in all tiers</li>
-              <li>Fast and reliable computation</li>
-              <li>Efficient resource utilization</li>
-            </ul>
-          </div>
-          
-          <div className="product-card">
-            <h3>Hyperbeam</h3>
-            <p className="product-description">
-              Fleet of hyperbeam nodes for all hyperbeam activities
-            </p>
-            <ul className="product-features">
-              <li>Exclusive to Developer Chat tier</li>
-              <li>High-performance nodes</li>
-              <li>Dedicated resources</li>
-              <li>Reliable performance</li>
-              <li>Cost-effective solutions</li>
-              <li>Faster than alternative providers</li>
-            </ul>
-          </div>
-          
-          <div className="product-card">
-            <h3>MU</h3>
-            <p className="product-description">
-              Messaging unit for sending messages and processing results for the CU
-            </p>
-            <ul className="product-features">
-              <li>Specialized for cron cranking</li>
-              <li>Advanced setup capabilities</li>
-              <li>More reliable than standard cron solutions</li>
-            </ul>
-          </div>
-          
-          <div className="product-card">
-            <h3>SU</h3>
-            <p className="product-description">
-              Scheduler unit that tracks process states and current status
-            </p>
-            <ul className="product-features">
-              <li>Physically closer to CUs for maximum speed</li>
-              <li>Optimized for processing efficiency</li>
-              <li>Enhanced state tracking capabilities</li>
-            </ul>
-          </div>
-        </div>
-        
         <div className="integration-section">
           <h3>Seamless Integration</h3>
           <p>All InfrAO products work together in perfect harmony, providing a complete infrastructure solution</p>

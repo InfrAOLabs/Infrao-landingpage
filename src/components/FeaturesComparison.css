@@ -58,29 +58,38 @@
   overflow: visible;
 }
 
+.comparison-header .tier-col.highlight {
+  position: relative;
+  overflow: visible;
+}
+
 .comparison-header .tier-col.highlight::before {
   content: 'MOST POPULAR';
   position: absolute;
-  top: 0px;
-  right: -35px;
-  background: #4f46e5;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-5deg);
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
   color: white;
-  padding: 0.15rem 1rem;
-  transform: rotate(45deg);
-  transform-origin: center;
-  font-size: 0.6rem;
-  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.65rem;
+  font-weight: 700;
   text-align: center;
-  width: 60px;
-  z-index: 1;
-  line-height: 1.2;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  z-index: 2;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Add some padding to the comparison header to accommodate the badge */
 .comparison-header {
   position: relative;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   overflow: visible;
+  margin-bottom: 0.5rem;
 }
 
 .subfeature {
