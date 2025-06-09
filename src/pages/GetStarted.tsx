@@ -1,7 +1,7 @@
 import React from 'react';
-import SupportTier from '../components/SupportTier';
-import FeaturesComparison from '../components/FeaturesComparison';
-import Onboard from '../components/Onboard';
+import SupportTier from '../components/SupportTier/SupportTier';
+import FeaturesComparison from '../components/FeaturesComparison/FeaturesComparison';
+import Onboard from '../components/Onboard/Onboard';
 import './GetStarted.css';
 
 const GetStarted: React.FC = () => {
@@ -10,13 +10,10 @@ const GetStarted: React.FC = () => {
       <div className="page-header">
         <h1>Get Started with InfrAO</h1>
         <p className="section-intro">Everything you need to begin your journey with our infrastructure solutions</p>
-      </div>
+        <p className="section-intro">Choose the support tier that fits your needs and budget</p></div>
       
       {/* Support Services Section */}
-      <section className="support-section">
-        <h2>Support Services</h2>
-        <p className="section-intro">Choose the support tier that fits your needs and budget</p>
-        
+      <section className="support-section">        
         <div className="support-tiers">
           <SupportTier
             title="Basic"
@@ -28,8 +25,8 @@ const GetStarted: React.FC = () => {
               "Basic tutorials",
               "Public issue tracker access"
             ]}
-            ctaText="Get Started"
-            ctaLink="#"
+            ctaText="Start Now"
+            ctaLink="https://docs_infrao.ar.io"
           />
           
           <SupportTier
@@ -54,9 +51,8 @@ const GetStarted: React.FC = () => {
             features={[
               "Team Support included",
               "Direct chat with our development team",
-              "Guaranteed response within 24 hours",
-              "Priority bug fixes",
-              "Best practices guidance"
+              "Guaranteed 24-hour response time",
+              "Priority bug fixes and feature requests"
             ]}
             includedTiers={["Team Support"]}
             highlight={true}

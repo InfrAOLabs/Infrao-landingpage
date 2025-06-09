@@ -1,0 +1,155 @@
+.support-tiers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+  justify-content: center;
+}
+
+.support-tier {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eaeaea;
+}
+
+.support-tier.highlight {
+  border: 2px solid #0066ff;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 102, 255, 0.2);
+}
+
+.support-tier h3 {
+  margin: 0 0 0.75rem 0;
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.tier-badge {
+  display: inline-block;
+  background: #f0f7ff;
+  color: #0066ff;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  align-self: flex-start;
+}
+
+.tier-description {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+}
+
+.included-tiers {
+  background: #f8f9fa;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin: 0 0 1rem 0;
+}
+
+.includes-label {
+  font-size: 0.8rem;
+  color: #555;
+  margin: 0 0 0.25rem 0;
+  font-weight: 500;
+}
+
+.included-tiers-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.included-tier {
+  font-size: 0.85rem;
+  color: #0066ff;
+  padding: 0.15rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.included-tier:before {
+  content: "✓";
+  margin-right: 0.5rem;
+  font-size: 0.9em;
+  color: #00c853;
+}
+
+.tier-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  flex-grow: 1;
+}
+
+.tier-feature {
+  padding: 0.4rem 0;
+  color: #444;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.4;
+}
+
+.tier-feature:before {
+  content: "•";
+  color: #0066ff;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  line-height: 1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: #f0f7ff;
+  color: #0066ff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.2s ease;
+  border: 1px solid #d0e3ff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn.primary {
+  background: #0066ff;
+  color: white;
+  border-color: #0066ff;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn.primary:hover {
+  background: #0052cc;
+  border-color: #0052cc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .support-tiers {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .support-tier {
+    padding: 1.25rem;
+  }
+}

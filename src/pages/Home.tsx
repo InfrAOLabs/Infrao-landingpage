@@ -1,7 +1,7 @@
 import React from 'react';
 import logoFilled from '/logo-filled.png';
 import Carousel from '../components/Carousel';
-import Onboard from '../components/Onboard';
+import Onboard from '../components/Onboard/Onboard';
 
 const Home: React.FC = () => {
   const features = [

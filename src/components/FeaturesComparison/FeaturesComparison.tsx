@@ -152,9 +152,9 @@ const FeaturesComparison: React.FC = () => {
       
       <div className="comparison-row actions">
         <div className="feature-col"></div>
-        <div className="tier-col"><a href="#" className="btn">Get Started</a></div>
-        <div className="tier-col"><a href="/contact" className="btn">Contact Us</a></div>
-        <div className="tier-col highlight"><a href="/contact" className="btn primary">Subscribe Now</a></div>
+        <div className="tier-col"><a href="https://docs_infrao.ar.io" className="btn start-now-btn">Start Now</a></div>
+        <div className="tier-col"><a href="/contact" className="btn start-now-btn">Contact Us</a></div>
+        <div className="tier-col highlight"><a href="/contact" className="btn primary start-now-btn">Subscribe Now</a></div>
       </div>
     </div>
   );
