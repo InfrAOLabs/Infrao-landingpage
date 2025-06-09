@@ -1,6 +1,7 @@
 import React from 'react';
 import SupportTier from '../components/SupportTier';
 import FeaturesComparison from '../components/FeaturesComparison';
+import Onboard from '../components/Onboard';
 import './GetStarted.css';
 
 const GetStarted: React.FC = () => {
@@ -87,14 +88,7 @@ const GetStarted: React.FC = () => {
         
         <FeaturesComparison />
         
-        <div className="integration-section">
-          <h3>Seamless Integration</h3>
-          <p>All InfrAO products work together in perfect harmony, providing a complete infrastructure solution</p>
-          <div className="cta-buttons">
-            <a href="https://cookbook_ao.arweave.net/concepts/units.html" className="btn primary" target="_blank" rel="noopener noreferrer">Learn More</a>
-            <a href="/contact" className="btn primary">Request Demo</a>
-          </div>
-        </div>
+        <Onboard />
       </section>
     </div>
   );

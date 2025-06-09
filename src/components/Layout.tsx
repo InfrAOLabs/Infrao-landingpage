@@ -25,8 +25,8 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               <li className={isActive('/')}>
                 <Link to="/">Home</Link>
               </li>
-              <li className={isActive('/docs')}>
-                <Link to="/docs">Docs</Link>
+              <li>
+                <a href="https://docs_infrao.ar.io" target="_blank" rel="noopener noreferrer">Docs</a>
               </li>
               <li className={isActive('/get-started')}>
                 <Link to="/get-started">Get Started</Link>

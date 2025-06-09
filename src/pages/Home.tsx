@@ -1,6 +1,7 @@
 import React from 'react';
 import logoFilled from '/logo-filled.png';
 import Carousel from '../components/Carousel';
+import Onboard from '../components/Onboard';
 
 const Home: React.FC = () => {
   const features = [
@@ -39,14 +40,7 @@ const Home: React.FC = () => {
       </div>
       
       <Carousel items={features} interval={4000} />
-      
-      <div className="cta-section">
-        <h2>Ready to transform your infrastructure?</h2>
-        <div className="cta-buttons">
-          <a href="/docs" className="btn primary">Get Started</a>
-          <a href="/infra" className="btn secondary">Explore Products</a>
-        </div>
-      </div>
+      <Onboard />
     </div>
   );
 };
